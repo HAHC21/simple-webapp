@@ -49,6 +49,10 @@
     margin-top: 50px;
 }
 
+.tusdatos-webapp-search-resultscontainer-listtitle {
+    text-align: center;
+}
+
 /* Results Page */
 
 .tusdatos-webapp-search-logocontainer {
@@ -104,7 +108,11 @@
     border: 1px solid #dfdfdf;
     border-radius: 5px;
     padding: 20px;
-    margin-bottom: 50px;
+    margin: auto;
+}
+
+.tusdatos-webapp-search-individualresult-summary {
+    font-size:12px;
 }
 
 .tusdatos-webapp-grid-container {
@@ -141,6 +149,7 @@
     height: 35px;
     line-height: 31px;
     border-radius: 3px;
+    margin-bottom: 30px;
 }
 
 .tusdatos-webapp-search-gbooks a {

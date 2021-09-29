@@ -28,14 +28,19 @@
                 <div class='tusdatos-webapp-search-individualresult grid-item'>
                     <h2>{{ book['book_title']|upper }}</h2>
                     <h4>{{ book['book_author'] }}</h4>
-                    <p><b>Published:</b> {{ book['publication_dt'] }}<br/>
+                    <p class='tusdatos-webapp-search-individualresult-summary'><b>Published:</b> {{ book['publication_dt'] }}<br/>
                     <b>Summary: </b>{% if book['summary'] == '' %}No Summary{% else %}{{ book['summary'] }}{% endif %}</p>
                     <p class='tusdatos-webapp-search-review'><a href="{{ book['url'] }}">Read review</a></p>
-                    <p class='tusdatos-webapp-search-gbooks'><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{ book['book_title'] }}+{{ book['book_author'] }}">See more  in Google Books</a></p>
+                    <p class='tusdatos-webapp-search-gbooks'><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{ book['book_title'] }}+{{ book['book_author'] }}">See more in Google Books</a></p>
                 </div>
                 {% endfor %}
             </div>
         {% else %}
+        <div class="tusdatos-webapp-grid-container">
+            <div class='tusdatos-webapp-search-individualresult grid-item'>
+                No book reviews were found. Maybe try <a href='https://www.google.com/search?sclient=gws-wiz&q={{ search_data }}' target='_blank'>Google Search?</a>
+            </div>
+        </div>
         {% endif %}
     </div>
 {% endblock %}

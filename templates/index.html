@@ -31,4 +31,34 @@
     <div class='tusdatos-webapp-index-titlecontainer-bestseller'>
         <h1>New York Times Best Seller Lists</h1>
     </div>
+    <div class='tusdatos-webapp-search-resultscontainer'>
+        <h2 class='tusdatos-webapp-search-resultscontainer-listtitle'>Hardcover Fiction</h2>
+        <div class="tusdatos-webapp-grid-container">
+            {% for book in bestsellers_f %}
+                {% set bookdata = book['book_details'] %}
+                <div class='tusdatos-webapp-search-individualresult grid-item'>
+                    <h2>{{ bookdata[0]['title']|upper }}</h2>
+                    <h4>{{ bookdata[0]['author'] }}</h4>
+                    <b>Summary: </b>{{ bookdata[0]['description'] }}</p>
+                    <p class='tusdatos-webapp-search-review'><a href="{{ book['amazon_product_url'] }}">See on Amazon</a></p>
+                    <p class='tusdatos-webapp-search-gbooks'><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{bookdata[0]['title'] }}+{{ bookdata[0]['author'] }}">See more in Google Books</a></p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <h2 class='tusdatos-webapp-search-resultscontainer-listtitle'>Hardcover Nonfiction</h2>
+        <div class="tusdatos-webapp-grid-container">
+            {% for book in bestsellers_nf %}
+                {% set bookdata = book['book_details'] %}
+                <div class='tusdatos-webapp-search-individualresult grid-item'>
+                    <h2>{{ bookdata[0]['title']|upper }}</h2>
+                    <h4>{{ bookdata[0]['author'] }}</h4>
+                    <b>Summary: </b>{{ bookdata[0]['description'] }}</p>
+                    <p class='tusdatos-webapp-search-review'><a href="{{ book['amazon_product_url'] }}">See on Amazon</a></p>
+                    <p class='tusdatos-webapp-search-gbooks'><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{bookdata[0]['title'] }}+{{ bookdata[0]['author'] }}">See more in Google Books</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock %}
