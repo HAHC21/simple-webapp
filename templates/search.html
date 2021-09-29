@@ -18,22 +18,23 @@
             <input type='text' name='author' optional>
             <label for='ISBN'>ISBN: </label>
             <input type='text' name='ISBN' optional>
-            <input type='submit'>
+            <input class='submit' type='submit'>
         </form>
     </div>
     <div class='tusdatos-webapp-search-resultscontainer'>
         {% if results_analysis > 0 %}
-            {% for book in nytimes_results %}
-
-            <h2>{{ book['book_title'] }}</h2>
-            <h4>{{ book['book_author'] }}</h4>
-            <p>byline by {{ book['byline'] }}</p>
-            <p><b>Published:</b> {{ book['publication_dt'] }}</p>
-            <p><b>Summary:</b>{% if book['summary'] == '' %} No Summary{% else %}{{ book['summary'] }}{% endif %}</p>
-            <p><a href="{{ book['url'] }}"><b>Read review</b></a></p>
-            <p><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{ book['book_title'] }}+{{ book['book_author'] }}">See more  in Google Books</a></p>
-
-            {% endfor %}
+            <div class="tusdatos-webapp-grid-container">
+                {% for book in nytimes_results %}
+                <div class='tusdatos-webapp-search-individualresult grid-item'>
+                    <h2>{{ book['book_title']|upper }}</h2>
+                    <h4>{{ book['book_author'] }}</h4>
+                    <p><b>Published:</b> {{ book['publication_dt'] }}<br/>
+                    <b>Summary: </b>{% if book['summary'] == '' %}No Summary{% else %}{{ book['summary'] }}{% endif %}</p>
+                    <p class='tusdatos-webapp-search-review'><a href="{{ book['url'] }}">Read review</a></p>
+                    <p class='tusdatos-webapp-search-gbooks'><a target='_blank' href="https://www.google.com/search?tbm=bks&q={{ book['book_title'] }}+{{ book['book_author'] }}">See more  in Google Books</a></p>
+                </div>
+                {% endfor %}
+            </div>
         {% else %}
         {% endif %}
     </div>

@@ -46,3 +46,104 @@
 
 
 /* Results Page */
+
+.tusdatos-webapp-search-logocontainer {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.tusdatos-webapp-search-logocontainer img {
+    width: 100px;
+}
+
+.tusdatos-webapp-search-titlecontainer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tusdatos-webapp-search-searchbarcontainer {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tusdatos-webapp-search-searchbarcontainer > form > label {
+    width: 100px;
+    text-align: center!important;
+}
+
+.tusdatos-webapp-search-searchbarcontainer > form > input {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+}
+
+.tusdatos-webapp-search-searchbarcontainer > form > .submit {
+    width: 200px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    height: 30px;
+}
+
+.tusdatos-webapp-search-resultscontainer {
+    padding: 50px;
+}
+
+.tusdatos-webapp-search-individualresult {
+    height: 90%;
+    width: 93%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.tusdatos-webapp-grid-container {
+    margin: auto;
+    display: grid;
+    width: 1250px;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+.tusdatos-webapp-search-review {
+    background-color: #333;
+    width: 150px;
+    text-align: center;
+    height: 35px;
+    line-height: 31px;
+    border-radius: 3px;
+}
+
+.tusdatos-webapp-search-review a {
+    color: white;
+    text-decoration: none!important;
+}
+
+.tusdatos-webapp-search-review a:hover {
+    color:white;
+}
+
+.tusdatos-webapp-search-gbooks {
+    background-color: cornflowerblue;
+    width: 225px;
+    text-align: center;
+    height: 35px;
+    line-height: 31px;
+    border-radius: 3px;
+}
+
+.tusdatos-webapp-search-gbooks a {
+    color: white;
+    text-decoration: none!important;
+}
+
+.tusdatos-webapp-search-gbooks a:hover {
+    color:white;
+}
