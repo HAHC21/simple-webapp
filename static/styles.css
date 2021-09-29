@@ -3,7 +3,6 @@
 .tusdatos-webapp-index-logocontainer {
     margin: auto;
     text-align: center;
-    padding-top: 200px;
 }
 
 .tusdatos-webapp-index-logocontainer img {
@@ -44,6 +43,11 @@
     height: 35px;
 }
 
+.tusdatos-webapp-index-titlecontainer-bestseller {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
 
 /* Results Page */
 
