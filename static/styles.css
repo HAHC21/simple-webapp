@@ -1,0 +1,48 @@
+/* Index Page */
+
+.tusdatos-webapp-index-logocontainer {
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.tusdatos-webapp-index-logocontainer img {
+    width: 100px;
+}
+
+.tusdatos-webapp-index-titlecontainer {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tusdatos-webapp-index-searchbarcontainer {
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tusdatos-webapp-index-searchbarcontainer > form > label {
+    width: 100px;
+    margin-bottom: 10px;
+    text-align: left!important;
+}
+
+.tusdatos-webapp-index-searchbarcontainer > form > input {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+}
+
+.tusdatos-webapp-index-searchbarcontainer > form > .submit {
+    width: 305px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    height: 35px;
+}
+
+
+/* Results Page */
