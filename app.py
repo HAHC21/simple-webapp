@@ -1,7 +1,7 @@
 # Import libraries
 from flask import Flask, jsonify, redirect, render_template, request, session
 from flask.json.tag import TaggedJSONSerializer
-import requests, json
+import requests, json, pandas
 from bs4 import BeautifulSoup as soup
 from cs50 import SQL
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
