@@ -13,8 +13,8 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # API Information
-api_key = 'BxMczzm0SnMBEsfisq8UqrUtVBRB1iSA'
-secret_api = 'S4sXtE4t9zvqAzRv'
+api_key = ''
+secret_api = ''
 api_reviews_url = 'https://api.nytimes.com/svc/books/v3/reviews.json'
 api_bestseller_url = 'https://api.nytimes.com/svc/books/v3/lists.json'
 
